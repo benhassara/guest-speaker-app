@@ -1,13 +1,21 @@
 language: node_js
 
 node_js:
-  - "4.1"
-  - "4.0"
-  - "0.12"
-  - "0.11"
+- '4.1'
+- '4.0'
+- '0.12'
+- '0.11'
 
 before_script:
-   - npm install -g mocha
+- npm install -g mocha
 
 script:
-  - mocha
+- mocha
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: G7d+yzYpyqvAzysVcn2cbr74QOMg9QjLwVZjRZ3lX4uifBdFcgKxaAACQ+7jGfnO0sYAGgV2wLBswxuFdd0bp4weFJAxccgrtpy+N5ruMrdX/PFp4xuC8nkgmWzYRB0+5mga9bG7av0HC6e+cV9FMVDu0QI2P1NIU3syYSDf10Ga/yxHgnUiO0cwVW69GqYsiq8gJNPJgE/S8EDmQOb9RaJ17PF2TFjaRXB8PsHwiEUFax5WnipPNLEJAehSa+n0Vv2lOMQ39xzM97NELem0hXyDqq4SYil3AfzGoReqhmNO61NMUydEZ179MBlRtQ1ZwDasqIlw/IPYI1l9d3l+3U01siDWGhy/QqtireJOBBYZfvYMHzbePUflyJQsfE4kXqG3nxcZGJIOhFKWu3EvvmLcu+XHY3FYQ5/y3l3eu/5N/5G+Ms/QgHiR0LbxHKatgnLMoECxKrOR1D26AU8X+SNihA82qdkRj46zyEDfnTe5je6GWU183W5s7qNY3sXp2zvXudEyCjCB2bVicN6j26TXEObjH+jK7tLbCQnq+3GxFNoGci4Wc2Gwr2bOhh/1gzu+Nmky+tTRKsG8WJ7bOUPnIHu6SdgPRQ4ICDriF6B1ZrOjt+hOEdBdrvP6mz7l1FbC79S6YJ8cG8olBFNpoR6hYOVWqmdQuGzWMHf0Uq4=
+  app: guest-speakers
+  on:
+    repo: benhassara/guest-speaker-app
