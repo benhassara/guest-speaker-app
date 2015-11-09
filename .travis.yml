@@ -19,3 +19,5 @@ deploy:
   app: guest-speakers
   on:
     repo: benhassara/guest-speaker-app
+    branch: master
+    node: '0.12'
