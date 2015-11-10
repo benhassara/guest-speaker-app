@@ -22,12 +22,21 @@ An app to allow students to rate and provide feedback on a guest speaker.
 
 ## User Stories
 
-1. As a user-
-  - Story 1
-  - Story 2
-1. As an admin-
-  - Story 1
-  - Story 1
+1. A user can-
+  - view past speakers
+  - view upcoming speakers
+  - add feedback on past speakers
+  - vote on *potential* upcoming topics
+  - login/logout via GitHub
+  - suggest speakers
+  - suggest topics
+1. An admin can-
+  - login/logout via GitHub
+  - approve/reject user registration
+  - CRUD students
+  - CRUD speakers
+  - CRUD topics
+  - toggle suggestion features
 
 ## Stack
 
