@@ -1,5 +1,6 @@
 # Guest Speaker App
 [![Build Status](https://travis-ci.org/benhassara/guest-speaker-app.svg?branch=master)](https://travis-ci.org/benhassara/guest-speaker-app)
+[![Coverage Status](https://coveralls.io/repos/benhassara/guest-speaker-app/badge.svg?branch=master&service=github)](https://coveralls.io/github/benhassara/guest-speaker-app?branch=master)
 
 An app to allow students to rate and provide feedback on a guest speaker.
 
