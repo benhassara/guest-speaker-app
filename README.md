@@ -11,10 +11,11 @@ An app to allow students to rate and provide feedback on a guest speaker.
   - Add Unit Tests
 1. Part 2
   - User Stories
-  - Code Coverage
-  - Authentication
+  - Code Coverage - istanbul, coveralls
 1. Part 3
-  - Add Feature One (via TDD)
+  - Data Modeling
+  - Sequelize / Migrations
+  - Authentication
 1. Part 4
   - Add Feature Two (via TDD)
 1. Part 5
@@ -25,17 +26,17 @@ An app to allow students to rate and provide feedback on a guest speaker.
 1. A user can-
   - view past speakers
   - view upcoming speakers
-  - add feedback on past speakers
+  - add feedback on on past speakers
   - vote on *potential* upcoming topics
-  - login/logout via GitHub
+  - login/logout via Github
   - suggest speakers
   - suggest topics
-1. An admin can-
-  - login/logout via GitHub
-  - approve/reject user registration
+1. A admin can-
+  - approve/reject users wanting to login
   - CRUD students
   - CRUD speakers
   - CRUD topics
+  - login/logout via Github
   - toggle suggestion features
 
 ## Stack
@@ -50,3 +51,17 @@ An app to allow students to rate and provide feedback on a guest speaker.
 - Front End: jQuery
 - CSS Framework: Skeleton
 - Templates: Swig
+
+## Tests
+
+Without code coverage:
+
+```sh
+$ npm test
+```
+
+With code coverage:
+
+```sh
+$ npm run cov
+```
