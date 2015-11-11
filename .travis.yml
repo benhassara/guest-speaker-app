@@ -12,7 +12,7 @@ before_script:
     - npm install -g coveralls
 
 script:
-    - mocha
+    - npm run cov
 
 after_script:
     - npm run send-coverage
