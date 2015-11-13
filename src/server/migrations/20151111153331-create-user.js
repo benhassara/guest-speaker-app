@@ -9,23 +9,23 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       email: {
-          type: Sequelize.STRING,
-          required: true,
-          allowNull: false,
-          validate: {
-              isEmail: true
-          }
-      },
-      admin: {
-          type: Sequelize.BOOLEAN,
-          defaultValue: false,
-          required: true,
-          allowNull: false
-      },
-      cohort: {
-          type: Sequelize.STRING,
-          allowNull: true
-      },
+      type: Sequelize.STRING,
+      required: true,
+      allowNull: false,
+      validate: {
+        isEmail: true
+      }
+    },
+    admin: {
+      type: Sequelize.BOOLEAN, 
+      defaultValue: false,
+      allowNull: false,
+      required: true
+    },
+    cohort: {
+      type: Sequelize.STRING,
+      allowNull: true
+    },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

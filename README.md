@@ -15,12 +15,22 @@ An app to allow students to rate and provide feedback on a guest speaker.
   - Code Coverage - istanbul, coveralls
 1. Part 3
   - Data Modeling
+    - user schema
   - Sequelize / Migrations
-  - Authentication
+    - migrate up / migrate down
 1. Part 4
-  - Add Feature Two (via TDD)
+  - Data Modeling
+    - speaker schema
+  - Database
+    - local
+    - travis
+    - heroku
 1. Part 5
-  - Add Feature Three (via TDD)
+  - Authentication
+    - passport-github?
+    - roll our own?
+  - Testing
+  - Mocks
 
 ## User Stories
 
@@ -66,3 +76,15 @@ With code coverage:
 ```sh
 $ npm run cov
 ```
+
+## Postgres Heroku Setup
+
+1. Create database on Heroku: `heroku addons:create heroku-postgresql:hobby-dev`
+1. Update `production` config in */src/server/config.json*
+1. Commit, PUSH, etc.
+1. Run Migrations on Heroku:
+
+  ```sh
+  $ heroku run bash
+  $ node_modules/.bin/sequelize db:migrate
+  ```

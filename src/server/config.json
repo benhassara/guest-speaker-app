@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "bhassara",
+    "username": "",
     "password": null,
     "database": "guest_app",
     "host": "127.0.0.1",
@@ -11,9 +11,6 @@
     "storage": ":memory:"
   },
   "production": {
-    "username": "",
-    "password": "",
-    "database": "guest_app_production",
     "host": "process.env.DATABASE_URL",
     "dialect": "postgres",
     "use_env_variable": "DATABASE_URL"
